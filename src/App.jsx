@@ -5,6 +5,8 @@ import "./App.css";
 import Header from "./component/Header/Header";
 import { Outlet } from "react-router-dom";
 import Footer from "./component/Footer/Footer";
+import { Toaster } from 'react-hot-toast';
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,6 +19,7 @@ function App() {
       <Outlet></Outlet>
       {/* Footer */}
       <Footer></Footer>
+      <Toaster/>
     </div>
   );
 }
